@@ -28,7 +28,7 @@ model:[
   "lingyi",
   "zhipu"
 ]
-,maxToken:64000
+,maxToken:4096
 }); 
 const st= ref({openMore:false });
 const voiceList= computed(()=>{
@@ -94,7 +94,7 @@ const saveChat=(type:string)=>{
  
 watch(()=>nGptStore.value.model,(n)=>{
     nGptStore.value.gpts=undefined;
-    let max=4096;
+    let max=64000;
     if( n.indexOf('vision')>-1){
         max=4096;
     }else if( n.indexOf('gpt-4')>-1 ||  n.indexOf('16k')>-1 ){ //['16k','8k','32k','gpt-4'].indexOf(n)>-1
