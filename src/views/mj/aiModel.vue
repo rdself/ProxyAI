@@ -95,7 +95,7 @@ const saveChat=(type:string)=>{
 watch(()=>nGptStore.value.model,(n)=>{
     nGptStore.value.gpts=undefined;
     let max=64000;
-    config.value.maxToken=max/2;
+    config.value.maxToken=32000;
     if(nGptStore.value.max_tokens> config.value.maxToken ) nGptStore.value.max_tokens= config.value.maxToken;
 })
 
