@@ -17,7 +17,7 @@ export function defaultSetting(): UserState {
     userInfo: {
       avatar: 'https://raw.githubusercontent.com/RogerProSelf/ProxyGPT/main/src/assets/avatar.jpg',
       name:  t('mjset.sysname'),
-      description: 'Star on <a href="https://github.com/RogerProSelf/ProxyGPT" class="text-blue-500" target="_blank" >GitHub</a>',
+      description: 'By Roger',
     },
   }
 }
