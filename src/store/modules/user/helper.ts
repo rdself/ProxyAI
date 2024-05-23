@@ -15,7 +15,7 @@ export interface UserState {
 export function defaultSetting(): UserState {
   return {
     userInfo: {
-      avatar: 'https://raw.githubusercontent.com/RogerProSelf/ProxyGPT/main/src/assets/avatar.jpg',
+      avatar: 'https://cdn.jsdelivr.net/gh/Siriling/my-icons@main/dist/icon/ChatGPT_A.png',
       name:  t('mjset.sysname'),
       description: 'By Roger',
     },
