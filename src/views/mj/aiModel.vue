@@ -28,7 +28,7 @@ model:[
   "lingyi",
   "zhipu"
 ]
-,maxToken:64000
+,maxToken:4096
 }); 
 const st= ref({openMore:false });
 const voiceList= computed(()=>{
