@@ -502,7 +502,7 @@ export const countTokens= async ( dataSources:Chat.Chat[], input:string ,uuid:nu
     return rz ;
 }
 const getModelMax=( model:string )=>{
-    let max=8;
+    let max=32;
     model= model.toLowerCase();
     if( model.indexOf('8k')>-1  ){
         return 8;
