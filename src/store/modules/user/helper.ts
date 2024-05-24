@@ -15,7 +15,7 @@ export interface UserState {
 export function defaultSetting(): UserState {
   return {
     userInfo: {
-      avatar: 'https://cdn.jsdelivr.net/gh/Siriling/my-icons@main/dist/icon/ChatGPT_A.png',
+      avatar: 'https://cdn.jsdelivr.net/gh/Siriling/my-icons@main/dist/icon/ChatGPT_B.png',
       name:  t('mjset.sysname'),
       description: 'By Roger',
     },
