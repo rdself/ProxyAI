@@ -67,6 +67,9 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE }}
+          tags: |
+            type=ref,event=branch
+            type=ref,event=tag
 
       # 构建并上传
       - name: Build and push
