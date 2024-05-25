@@ -18,7 +18,7 @@ jobs:
   build-and-push:
     runs-on: ubuntu-latest
 
-    # 定义 GITHUB_TOKEN 的权限
+    # 定义权限
     permissions:
       packages: write
       contents: read
