@@ -61,7 +61,7 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE }}
           tags: |
-            type=ref,event=latest
+            type=raw,value=latest
             type=ref,event=tag
 
       # 构建并上传
