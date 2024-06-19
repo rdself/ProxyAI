@@ -422,6 +422,22 @@ export default {
     ,fail:'失败'
     ,info:'说明:<br>上传音频时长必须在6s-60s内'
   }
+  ,video:{
+    menu:"视频",
+    menuinfo:'Luam等 视频创作',
+    descpls:'视频创作描述',
+    lumaabout:"Luma 相关",
+    lumaserver:"Luma 接口地址",
+    setOpenKeyPlaceholder:'Luma API 的key, 可不填',
+    generate:'生成视频',
+    nodata:'暂无可用视频，请先生成！',
+    selectimg:'参考图片',
+    clear:'清除',
+    plsInput:'请输入内容！',
+    submitSuccess:'已提交成功！',
+    process:'视频生成中...',
+    repeat:'重新获取',
+  }
 
 
 }
