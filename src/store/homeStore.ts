@@ -116,7 +116,7 @@ let v:gptServerType={
         MJ_API_SECRET:'',
         SUNO_KEY:'',
         SUNO_SERVER:'https://nas.deng.pub:6985',
-        MJ_CDN_WSRV:true,
+        MJ_CDN_WSRV:false,
         IS_SET_SYNC:true,
         LUMA_SERVER:'https://nas.deng.pub:6985',
         LUMA_KEY:''
