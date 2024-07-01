@@ -2,7 +2,7 @@
     "tag": [],
     "gpts": [
         {
-            "gid": "gpt-all",
+            "gid": "openai-gpt-all",
             "name": "GPT 逆向",
             "logo": "https://cos.aitutu.cc/gpts/gpt4all.jpg",
             "info": "逆向 OpenAI 官方最新模型，支持联网，多模态、代码执行、绘图功能。"
