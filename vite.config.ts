@@ -22,8 +22,8 @@ function setupPlugins(env: ImportMetaEnv): PluginOption[] {
         name: 'ProxyAI',
         short_name: 'ProxyAI',
         icons: [
-          { src: 'pwa-new-192x192.png', sizes: '192x192', type: 'image/png' },
-          { src: 'pwa-new-512x512.png', sizes: '512x512', type: 'image/png' },
+          { src: 'favicon-192.png', sizes: '192x192', type: 'image/png' },
+          { src: 'favicon-512.png', sizes: '512x512', type: 'image/png' },
         ],
       },
     }),

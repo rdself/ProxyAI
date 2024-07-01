@@ -4,20 +4,20 @@
         {
             "gid": "openai-gpt-all",
             "name": "GPT 逆向",
-            "logo": "https://cos.aitutu.cc/gpts/gpt4all.jpg",
-            "info": "逆向 OpenAI 官方最新模型，支持联网，多模态、代码执行、绘图功能。"
+            "logo": "/openai-gpt-all.png",
+            "info": "逆向 OpenAI 官方最新模型，附带联网、代码执行、绘图功能。"
         },
         {
             "gid": "suno",
             "name": "Suno 音乐",
-            "logo": "https://150226542.v2.pressablecdn.com/wp-content/uploads/2024/03/Suno-AI-Logo-標誌圖片.png",
-            "info": "逆向 Suno 官方最新模型，支持音乐生成"
+            "logo": "/suno.png",
+            "info": "逆向 Suno 官方最新模型，支持音乐生成。"
         },
         {
             "gid": "luma",
             "name": "Luma 音乐",
-            "logo": "https://logosandtypes.com/wp-content/uploads/2023/12/Luma-AI.png",
-            "info": "逆向 Luma 官方最新模型，支持视频生成"
+            "logo": "/luma.png",
+            "info": "逆向 Luma 官方最新模型，支持视频生成。"
         }
     ]
 }
