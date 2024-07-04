@@ -101,11 +101,12 @@ router.post('/session', async (req, res) => {
     const visionModel= process.env.VISION_MODEL??""
     const systemMessage= process.env.SYSTEM_MESSAGE??""
     const customVisionModel= process.env.CUSTOM_VISION_MODELS??""
+    const isHk= (process.env.OPENAI_API_BASE_URL??"").toLocaleLowerCase().indexOf('-hk')>0
 
     const data= { disableGpt4,isWsrv,uploadImgSize,theme,isCloseMdPreview,uploadType,
       notify , baiduId, googleId,isHideServer,isUpload, auth: hasAuth
       , model: currentModel(),amodel,isApiGallery,cmodels,isUploadR2,gptUrl
-      ,turnstile,menuDisable,visionModel,systemMessage,customVisionModel
+      ,turnstile,menuDisable,visionModel,systemMessage,customVisionModel,isHk
     }
     res.send({  status: 'Success', message: '', data})
   }
@@ -338,7 +339,7 @@ app.use('/luma' ,authV2, proxy(process.env.LUMA_SERVER??  API_BASE_URL, {
   proxyReqOptDecorator: function (proxyReqOpts, srcReq) {
     //mlog("sunoapi")
     if ( process.env.LUMA_KEY ) proxyReqOpts.headers['Authorization'] ='Bearer '+process.env.LUMA_KEY;
-    //else   proxyReqOpts.headers['Authorization'] ='Bearer '+process.env.OPENAI_API_KEY;  
+    else   proxyReqOpts.headers['Authorization'] ='Bearer '+process.env.OPENAI_API_KEY;  
     proxyReqOpts.headers['Content-Type'] = 'application/json';
     proxyReqOpts.headers['Mj-Version'] = pkg.version;
     return proxyReqOpts;
