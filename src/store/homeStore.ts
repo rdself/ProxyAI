@@ -64,7 +64,7 @@ const  getDefault=()=>{
 const amodel = homeStore.myData.session.amodel??'gpt-3.5-turbo'
 let v:gptConfigType={
         model: amodel,
-        max_tokens:4096,
+        max_tokens:1024,
         userModel:'',
         talkCount:10,
         systemMessage:'',
@@ -103,6 +103,8 @@ export interface gptServerType{
     SUNO_KEY:string
     LUMA_SERVER:string
     LUMA_KEY:string
+    VIGGLE_SERVER:string
+    VIGGLE_KEY:string
     IS_SET_SYNC?:boolean
     GPTS_GX?:boolean
     IS_LUMA_PRO?:boolean
@@ -112,16 +114,18 @@ export interface gptServerType{
 const  getServerDefault=()=>{
 let v:gptServerType={
         OPENAI_API_KEY:'',
-        OPENAI_API_BASE_URL:'https://nas.deng.pub:6985',
-        MJ_SERVER:'https://nas.deng.pub:6985',
+        OPENAI_API_BASE_URL:'',
+        MJ_SERVER:'',
         UPLOADER_URL:'',
         MJ_API_SECRET:'',
         SUNO_KEY:'',
-        SUNO_SERVER:'https://nas.deng.pub:6985',
-        MJ_CDN_WSRV:false,
-        IS_SET_SYNC:true,
-        LUMA_SERVER:'https://nas.deng.pub:6985',
-        LUMA_KEY:''
+        SUNO_SERVER:'',
+        MJ_CDN_WSRV:false
+        ,IS_SET_SYNC:true,
+        LUMA_SERVER:'',
+        LUMA_KEY:'',
+        VIGGLE_SERVER:'',
+        VIGGLE_KEY:'',
     }
     return v ;
 }
