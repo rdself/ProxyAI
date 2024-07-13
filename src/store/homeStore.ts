@@ -120,7 +120,7 @@ let v:gptServerType={
         UPLOADER_URL:'',
         MJ_API_SECRET:'',
         SUNO_KEY:'',
-        SUNO_SERVER:'https://nas.deng.pub:6985',
+        SUNO_SERVER:'',
         MJ_CDN_WSRV:false
         ,IS_SET_SYNC:true,
         LUMA_SERVER:'',
