@@ -2,19 +2,19 @@
     "tag": [],
     "gpts": [
         {
-            "gid": "openai-gpt-all",
+            "gid": "OpenAI-All",
             "name": "GPT All",
             "logo": "/openai-gpt-all.png",
             "info": "逆向 OpenAI 官方最新模型，附带联网、代码执行、绘图功能。"
         },
         {
-            "gid": "suno",
+            "gid": "Suno",
             "name": "Suno 音乐",
             "logo": "/suno.png",
             "info": "逆向 Suno 官方最新模型，支持音乐生成。"
         },
         {
-            "gid": "luma",
+            "gid": "Luma",
             "name": "Luma 视频",
             "logo": "/luma.png",
             "info": "逆向 Luma 官方最新模型，支持视频生成。"
