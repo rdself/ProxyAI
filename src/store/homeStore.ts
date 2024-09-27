@@ -125,8 +125,8 @@ export interface gptServerType{
 const  getServerDefault=()=>{
 let v:gptServerType={
         OPENAI_API_KEY:'',
-        OPENAI_API_BASE_URL:'https://nas.deng.pub:6985',
-        MJ_SERVER:'https://nas.deng.pub:6985',
+        OPENAI_API_BASE_URL:'https://cdn.deng.pub:6985',
+        MJ_SERVER:'https://cdn.deng.pub:6985',
         UPLOADER_URL:'',
         MJ_API_SECRET:'',
         SUNO_KEY:'',
