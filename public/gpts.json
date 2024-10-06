@@ -2,10 +2,16 @@
     "tag": [],
     "gpts": [
         {
+            "gid": "OpenAI-Advanced",
+            "name": "GPT Advanced",
+            "logo": "/openai.png",
+            "info": "逆向 OpenAI 官方最新模型。"
+        },
+        {
             "gid": "OpenAI-All",
             "name": "GPT All",
-            "logo": "/openai-gpt-all.png",
-            "info": "逆向 OpenAI 官方最新模型，附带联网、代码执行、绘图功能。"
+            "logo": "/openai.png",
+            "info": "逆向 OpenAI 官方主力模型，附带联网搜索、代码执行、绘图功能。"
         },
         {
             "gid": "Suno",
