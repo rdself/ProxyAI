@@ -225,7 +225,7 @@ export default {
 
   ,rttab: 'RealTime',
   rtinfo: 'Realtime voice conversation service',
-  rtsetting: 'Please set the server. Currently, Realtime only supports remote services; for local services, please contact the author.',
+  rtsetting: '请设置服务器',
   rjcloded: 'Connection has been disconnected',
   checkkey: 'Please check if the API key is correct',
   rtsuccess: 'Connection is normal, maintaining the call',

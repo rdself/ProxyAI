@@ -218,7 +218,7 @@ export default {
     ,kling:'可灵',
     rttab: '語音',
     rtinfo: '實時語音對話服務(realtime)',
-    rtsetting: '請設置服務器，目前Realtime僅支持遠程服務；需本地服務請聯繫作者',
+    rtsetting: '请设置服务器',
     rjcloded: '連接已斷開',
     checkkey: '請檢查api key是否正確',
     rtsuccess: '連接正常保持通話',

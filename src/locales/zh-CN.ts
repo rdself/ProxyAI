@@ -329,7 +329,7 @@ export default {
 
     ,rttab:'语音'
     ,rtinfo:'实时语音对话服务(realtime)'
-    ,rtsetting:'请设置服务端，目前Realtime 仅支持远程服务；需本地服务请联系作者'
+    ,rtsetting:'请设置服务器'
     ,rjcloded:'连接已断开'
     ,checkkey:'请检查 api key 是否正确'
     ,rtsuccess:'连接正常保持通话'
