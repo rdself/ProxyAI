@@ -220,6 +220,23 @@ export default {
     "right_turn_forward": "Quay phải và đẩy tới",
     "left_turn_forward": "Quay trái và đẩy tới"
     ,kling:'Kling'
+    ,rttab: 'Giọng nói',
+    rtinfo: 'Dịch vụ hội thoại giọng nói thời gian thực (realtime)',
+    rtsetting: 'Vui lòng thiết lập máy chủ. Hiện tại, Realtime chỉ hỗ trợ dịch vụ từ xa; nếu cần dịch vụ cục bộ, vui lòng liên hệ với tác giả.',
+    rjcloded: 'Kết nối đã bị ngắt',
+    checkkey: 'Vui lòng kiểm tra xem API key có chính xác không',
+    rtsuccess: 'Kết nối bình thường, duy trì cuộc gọi',
+    rtservererror: 'Lỗi kết nối máy chủ WebSocket!',
+    rtservererror2: 'Không hỗ trợ ghi âm, có thể do thiết bị!',
+    rtconecting: 'Đang kết nối đến máy chủ',
+
+    "confirmDelete": "Bạn có chắc chắn muốn xóa không?",
+    "pikaabout": "Về Pika",
+    "pikaserver": "Địa chỉ API Pika",
+    "pikakeyPlaceholder": "Khóa API Pika (tùy chọn)",
+    "createFail": "Tạo không thành công",
+    "selecteff": "Hiệu ứng tham khảo"
+    
   },
   "mjset": {
     "server": "Máy chủ",
