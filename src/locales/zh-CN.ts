@@ -344,6 +344,21 @@ export default {
     ,createFail:'生成失败'
     ,selecteff:'参考效果'
 
+    ,udioabout:'Udio 相关'
+    ,udiokeyPlaceholder:'Udio 的API Key 可不填'
+    ,udioserver:'Udio 接口地址'
+    ,ud_prompt:'提示词'
+    ,ud_prompt_pls:'提示词: 描述、曲风'
+    ,ud_ly_write:'自定义歌词'
+    ,ud_ly_auto:'智能歌词'
+    ,ud_ly_null:'纯音乐'
+    ,ud_v32:'实惠'
+    ,ud_v130:'时间长'
+    ,ud_info:'注意：<ul><li>1.udio-32 时长短</li><li>2.udio-130 价格是udio-32的2倍 </li><li>3.提示词内可以放风格、描述等</li></ul>'
+    ,ud_fail:"这首歌生成失败！"
+    ,ud_doing:"生成中无法播放"
+    ,ud_continuation:"后扩展"
+    ,ud_precede:"前扩展"
   },
 
 	draw: {
@@ -458,7 +473,7 @@ export default {
     ,nodata:'请先创作才有歌曲列表'
 
     ,menu:'音乐'
-    ,menuinfo:'Suno 音乐创作'
+    ,menuinfo:'Suno、Udio等音乐创作'
     ,server:'Suno 接口地址'
     ,serverabout:'Suno 相关'
     ,setOpenKeyPlaceholder:'Suno API 的相关KEY；可不填'
@@ -492,7 +507,7 @@ export default {
     download:'下载',
     extend:'延展',
 
-    lumainfo:'说明：<ul><li>1.pro与relax演示视频都是有水印的链接</li><li>2.pro无水印版本需要通过“下载按钮”得到下载链接</li><li>3.pro得到的链接有时限；请及时保存mp4文件到本地</li><li>4.pro请在生成后的30分钟内；将mp4保存到本地，渠道号也可能被封或者下线</li> <li>5.pro当下载链接无效时会给出带水印的视频链接</li></ul>',
+    lumainfo:'说明：<ul><li >1.relax版已下线，<b style="color:red">入口已经更换到pro无水印版</b></li><li>2.无水印版本需要通过“下载按钮”得到下载链接</li><li>3.pro得到的链接有时限；请及时保存mp4文件到本地</li><li>4.请在生成后的30分钟内；将mp4保存到本地，渠道号也可能被封或者下线</li> <li>5.当下载链接无效时会给出带水印的视频链接</li></ul>',
     runwayabout:'Runway 相关',
     runwayserver:'Runway 接口地址',
     setOpenKeyPlaceholder2:'Runway API 的key, 可不填',
