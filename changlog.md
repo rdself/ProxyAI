@@ -1,6 +1,20 @@
 # 功能升级日志
 
 #  计划 
+# 2.22.4
+- 🐞 修复：mj shorten
+- 🐞 修复：mj 图转文
+
+# 2.22.3
+- 😄 新增音乐：suno-v4
+- 😄 新增gpt模型：gpt-4o-2024-11-20
+# 2.22.2
+- 😄 新增：支持ruanway 官方api
+- 🐞 修复：模型识图表示
+
+# 2.22.1
+- 😄 新增：超链定位tab 定位到可灵 https://vercel.ddaiai.com//#/video/index?tab=kling
+- 😄 新增：手机可使用 音乐
 
 # 2.21.10
 - 😄 新增：claude-3-5-sonnet-all 模型
