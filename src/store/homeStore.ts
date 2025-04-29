@@ -65,7 +65,7 @@ const  getDefault=()=>{
 const amodel = homeStore.myData.session.amodel??'gpt-3.5-turbo'
 let v:gptConfigType={
         model: amodel,
-        max_tokens:4096,
+        max_tokens:8192,
         userModel:'',
         talkCount:10,
         systemMessage:'',
@@ -136,8 +136,8 @@ export interface gptServerType{
 const  getServerDefault=()=>{
 let v:gptServerType={
         OPENAI_API_KEY:'',
-        OPENAI_API_BASE_URL:'https://cdn.deng.pub:6985',
-        MJ_SERVER:'https://cdn.deng.pub:6985',
+        OPENAI_API_BASE_URL:'',
+        MJ_SERVER:'',
         UPLOADER_URL:'',
         MJ_API_SECRET:'',
         SUNO_KEY:'',
