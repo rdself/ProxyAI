@@ -9,6 +9,7 @@ import { getCurrentDate } from '@/utils/functions'
 import { useBasicLayout } from '@/hooks/useBasicLayout'
 import { t } from '@/locales'
 import { getWebDAVConfig, saveWebDAVConfig, syncToWebDAV, syncFromWebDAV } from '@/utils/webdav'
+import { clearSiteDataAndReload } from '@/utils/site-data'
 
 const appStore = useAppStore()
 const userStore = useUserStore()
@@ -234,6 +235,10 @@ async function handleDownloadFromWebDAV(): Promise<void> {
     ms.error(`下载失败: ${error.message}`)
   }
 }
+
+async function handleClearSiteData(): Promise<void> {
+  await clearSiteDataAndReload()
+}
 </script>
 
 <template>
@@ -391,6 +396,17 @@ async function handleDownloadFromWebDAV(): Promise<void> {
         <NButton size="small" @click="handleReset">
           {{ $t('common.reset') }}
         </NButton>
+      </div>
+      <div class="flex items-center space-x-4">
+        <span class="flex-shrink-0 w-[100px]">浏览器缓存</span>
+        <NPopconfirm placement="bottom" @positive-click="handleClearSiteData">
+          <template #trigger>
+            <NButton size="small" type="error">
+              清除并刷新
+            </NButton>
+          </template>
+          确定清除当前站点缓存并刷新页面？
+        </NPopconfirm>
       </div>
     </div>
   </div>
