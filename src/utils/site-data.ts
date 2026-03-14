@@ -1,24 +1,11 @@
-async function clearIndexedDB(): Promise<void> {
-  if (typeof window === 'undefined' || !('indexedDB' in window))
-    return
-
-  const indexedDBApi = window.indexedDB
-  const databases = typeof indexedDBApi.databases === 'function'
-    ? await indexedDBApi.databases()
-    : []
-
-  await Promise.allSettled(
-    databases
-      .map(database => database.name)
-      .filter((name): name is string => !!name)
-      .map(name => new Promise<void>((resolve) => {
-        const request = indexedDBApi.deleteDatabase(name)
-        request.onsuccess = () => resolve()
-        request.onerror = () => resolve()
-        request.onblocked = () => resolve()
-      })),
-  )
-}
+const LOCAL_STORAGE_KEYS_TO_CLEAR = [
+  'SECRET_TOKEN',
+  'gptConfigStore',
+  'gptServerStore',
+  'webdav_config',
+  '_t_apikey',
+  '_t_baseurl',
+] as const
 
 async function clearCacheStorage(): Promise<void> {
   if (typeof window === 'undefined' || !('caches' in window))
@@ -40,11 +27,10 @@ export async function clearSiteData(): Promise<void> {
   if (typeof window === 'undefined')
     return
 
-  window.localStorage.clear()
+  LOCAL_STORAGE_KEYS_TO_CLEAR.forEach(key => window.localStorage.removeItem(key))
   window.sessionStorage.clear()
 
   await Promise.allSettled([
-    clearIndexedDB(),
     clearCacheStorage(),
     clearServiceWorkers(),
   ])

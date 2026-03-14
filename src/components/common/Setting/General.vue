@@ -398,14 +398,14 @@ async function handleClearSiteData(): Promise<void> {
         </NButton>
       </div>
       <div class="flex items-center space-x-4">
-        <span class="flex-shrink-0 w-[100px]">浏览器缓存</span>
+        <span class="flex-shrink-0 w-[100px]">页面缓存</span>
         <NPopconfirm placement="bottom" @positive-click="handleClearSiteData">
           <template #trigger>
             <NButton size="small" type="error">
-              清除并刷新
+              清配置并刷新
             </NButton>
           </template>
-          确定清除当前站点缓存并刷新页面？
+          确定清除 API 配置和页面缓存？聊天记录会保留。
         </NPopconfirm>
       </div>
     </div>
